@@ -50,14 +50,16 @@ public class Calculator
     public static void weighted(String data) {
         ArrayList<String> classes = new ArrayList<String>();
         char[] grades = {'F', 'D', 'C', 'B', 'A'};
-        int lines = 0;
+        String line = "";
         for (int i = 0; i < data.length(); i++) {
-            if (data.charAt(i) == ':') {
-                lines++;
+            if (data.charAt(i) != ';') {
+                line += data.charAt(i);
             }
-        }
-        for (int i = 0; i < lines; i++) {
-            String line = data;
+            else {
+                //System.out.println(line);
+                classes.add(line);
+                line = "";
+            }
         }
         classes.remove(0);
         double sum = 0;
