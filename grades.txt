@@ -38,3 +38,10 @@
 ;history:B.
 ;elective:A.
 ;lote:A.
+
+;math:C.
+;english:B.
+;science:A.
+;history:C.
+;elective:A.
+;lote:A.
