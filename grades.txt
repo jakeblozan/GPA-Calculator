@@ -40,8 +40,8 @@
 ;lote:A.
 
 ;math:C.
-;english:B.
+;english:A.
 ;science:A.
-;history:C.
+;history:B.
 ;elective:A.
 ;lote:A.

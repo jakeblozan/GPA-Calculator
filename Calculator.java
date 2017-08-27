@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.IOException;
 import java.io.File;
+import java.text.DecimalFormat;
 
 /**
  * Calculates weighted or unweighted GPA.
@@ -22,7 +23,7 @@ public class Calculator
         while (input != "weighted" || input != "unweighted") {
             System.out.println("Would you like to calculate your weighted or unweighted GPA?");
             input = scan.next();
-            if (input.equals("weighted") || input.equals("unweighted")) {
+            if (input.equalsIgnoreCase("weighted") || input.equalsIgnoreCase("unweighted")) {
                 System.out.println("Nice. Fetching data...");
                 break;
             }
@@ -37,11 +38,11 @@ public class Calculator
             data += dataScan.nextLine();
         }
 
-        if (input.equals("weighted")) {
+        if (input.equalsIgnoreCase("weighted")) {
             weighted(data);
         }
 
-        if (input.equals("unweighted")) {
+        if (input.equalsIgnoreCase("unweighted")) {
             unweighted(data);
         }
         //System.out.println(data);
@@ -76,7 +77,8 @@ public class Calculator
             }
         }
         double gpa = sum / classes.size();
-        System.out.println("Your weighted GPA is: " + gpa);
+        DecimalFormat numberFormat = new DecimalFormat("#.00");
+        System.out.println("Your weighted GPA is: " + numberFormat.format(gpa));
         
         //System.out.println(sum);
         //System.out.println(classes.size());
@@ -111,7 +113,8 @@ public class Calculator
             }
         }
         double gpa = sum / classes.size();
-        System.out.println("Your unweighted GPA is: " + gpa);
+        DecimalFormat numberFormat = new DecimalFormat("#.00");
+        System.out.println("Your unweighted GPA is: " + numberFormat.format(gpa));
         
         //System.out.println(sum);
         //System.out.println(classes.size());
