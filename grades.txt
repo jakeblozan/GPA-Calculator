@@ -45,3 +45,12 @@
 ;history:B.
 ;elective:A.
 ;lote:A.
+
+
+
+;physio:A 
+;psych:A.
+;gov:B.
+;woods:A 
+;english:B.
+;physics:C.

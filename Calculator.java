@@ -116,6 +116,7 @@ public class Calculator
         DecimalFormat numberFormat = new DecimalFormat("#.00");
         System.out.println("Your unweighted GPA is: " + numberFormat.format(gpa));
         
+        //DEBUG
         //System.out.println(sum);
         //System.out.println(classes.size());
         
