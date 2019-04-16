@@ -1,0 +1,15 @@
+;aero:2 A 
+;coms:4 B+
+;calc:4 F 
+;phys:4 C-
+
+;chem:4 C 
+;ime:4 B 
+;calc:4 D-
+;phys:4 B-
+
+;engl:4 B 
+;calc:4 B 
+;phys:4 B 
+
+;
