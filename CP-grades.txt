@@ -5,11 +5,10 @@
 
 ;chem:4 C 
 ;ime:4 B 
-;calc:4 D-
 ;phys:4 B-
 
-;engl:4 B 
-;calc:4 B 
-;phys:4 B 
+;engl:4 A 
+;calc:4 B-
+;phys:4 B-
 
 ;
