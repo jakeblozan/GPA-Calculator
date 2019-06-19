@@ -8,7 +8,7 @@
 ;phys:4 B-
 
 ;engl:4 A 
-;calc:4 B-
-;phys:4 B-
+;calc:4 C 
+;phys:4 B 
 
 ;
