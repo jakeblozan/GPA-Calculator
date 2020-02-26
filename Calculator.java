@@ -31,11 +31,12 @@ public class Calculator
         System.out.println("What the... please try again and use a valid input");
         }
         }*/
-
-        Scanner dataScan = new Scanner(new File("CP-grades.txt"));
+        
+        String source = "CP-grades.txt";
+        Scanner dataScan = new Scanner(new File(source));
         String data = "";
 
-        System.out.println("Nice. Fetching data...");
+        System.out.println("Nice. Fetching data from " + source + "...");
 
         while (dataScan.hasNext()) {
             data += dataScan.nextLine();
@@ -93,7 +94,7 @@ public class Calculator
             }
         }
         double gpa = pointsEarned / units;
-        DecimalFormat numberFormat = new DecimalFormat("#.00");
+        DecimalFormat numberFormat = new DecimalFormat("#.000");
         System.out.println("Your unweighted GPA is: " + numberFormat.format(gpa));
 
         //DEBUG

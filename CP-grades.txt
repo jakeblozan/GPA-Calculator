@@ -11,4 +11,10 @@
 ;calc:4 C 
 ;phys:4 B 
 
+;aero:2 A 
+;bio:2 A-
+;bmed:2 A 
+;math:4 D 
+;stat:3 C 
+
 ;
